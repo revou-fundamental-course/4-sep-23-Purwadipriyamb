@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    
+    <div class="header"><center><h1>Kalkulator Matematik : Persegi</h1></center>
+    </div>
+        <div class id="content">
+            <table>
+                <tr>
+                    <td>
+                    <center><p><h3>Welcome! :] Di kalkulator Menghitung Luas dan Keliling bangun datar.</h3></p>
+                    <p><h3 style="color:red;">Luas Persegi</h3></p>
+                    <img src="img/bujursangkar.jpg" width="170px" height="170px" />
+                    <p>Bujur Sangkar</p></center>
+                    <p style="color:blue;">Rumus Luas Persegi yaitu adalah:</p>
+                    <center><p><b><i>L = SxS  (luas sama dengan sisi persegi dikali sisi)</i></b></p></center>
+                    <h5><p>Dimana <u>di ketahui : </u>
+                    <b>L=Luas 
+                    S=Sisi</b></p></h5>
+                    <h3>Menghitung Luas Persegi</h3><p>
+                        <form>
+                            Sisi luas: <input type="number" id="sisiLuas"><br>
+                            <button type="button" onclick="hitungLuas()">Hitung</button>
+                        </form>
+                        <script>
+                             function hitungLuas() {
+                             let sisiLuas = parseInt(document.getElementById("sisiLuas").value);
+                             let hitungLuas = sisiLuas * sisiLuas;
+                    
+                                console.log("Luas persegi : " + hitungLuas);
+                            }
+                        </script>
+
+                    <button type="button" name="reset" onclick="document.getElementById(sisiKeliling).innerHTML=refresh()"><h5>Reset</h5></button>
+
+                        <button type="button" name="reset" onclick="document.getElementById(sisi-keliling).innerHTML=document()"><h5>Reset</h5></button>
+                        </p>
+                    </td>
+                <td>
+                    <p><h3 style="color: blue;">Menghitung Keliling Persegi</h3></p>
+                    <h4><b>Rumus nya adalah: </b><b><i>K = 4 x S</i></b></h4>
+                    <form>
+                        Sisi Keliling: <input type="number" id="sisiKeliling"><br>
+                        <button type="button" onclick="hitungKeliling()">Hitung</button>
+                    </form>
+                    <script>
+                         function hitungKeliling() {
+                         let sisiKeliling = parseInt(document.getElementById("sisiKeliling").value);
+                         let hitungKeliling = 4 * sisiKeliling;
+                
+                            console.log("Keliling persegi : " + hitungKeliling);
+                        }
+                    </script>
+                    <button type="button" name="reset" onclick="document.getElementById(sisiKeliling).innerHTML=refresh()"><h5>Reset</h5></button>
+                </td>
+                </tr>
+            </table><center>
+                <button type="button"
+                onclick="document.getElementById('demo').innerHTML=Date()">
+                <h5 style="text-align: right;">Click me to display Date and Time.</h5></button>
+                <h5><p id="demo"> </p></h5></center>
+        </div>
+    <div id="footer">
+        <center><h4>Copyrights &copy; 2023 By Adi</h4></center>
+    </div>
+</body>
+</html>
